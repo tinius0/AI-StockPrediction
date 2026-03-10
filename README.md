@@ -1,6 +1,10 @@
 # Stock Price Predictor & Trading System
 
-A machine learning pipeline that downloads historical OHLCV data via `yfinance`, engineers technical indicators, trains a Random Forest model to forecast next-day close prices, and simulates a long/short trading strategy against a buy-and-hold benchmark.
+A machine learning pipeline that downloads historical OHLCV data via `yfinance`, engineers technical indicators, trains a Random Forest model to forecast next-day close prices, and simulates a long/short trading strategy against a buy-and-hold benchmark.  
+## Editions  
+### First edition  
+THere are "errors" in the model, not utilizing all the params available to it.  
+Predictions are based on random forests, meaning it wont predict past the ATH it observed in the training set, thats why the curve is flattening.  
 
 ---
 
@@ -9,7 +13,7 @@ A machine learning pipeline that downloads historical OHLCV data via `yfinance`,
 ```
 ├── stock_model.py        # Feature engineering & data preparation
 ├── trading_system.py     # Strategy engine, metrics, equity simulation
-├── predictor.py          # Price prediction visualisation & rolling MAE
+├── trading_model.py          # Price prediction visualisation & rolling MAE
 ```
 
 ---

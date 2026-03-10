@@ -51,7 +51,7 @@ Strategy and benchmark equity curves are computed, along with Sharpe ratio, max 
 
 ### Price Prediction & Model Drift
 
-`predictor.py` produces a two-panel chart:
+`main.py` produces a two-panel chart:
 
 - **Top**: Actual next-day close (white) vs model predictions (orange dashed)
 - **Bottom**: Rolling 20-day MAE (yellow) and the overall MAE baseline (grey dotted) — rising MAE indicates the model is losing predictive accuracy in that window
@@ -62,7 +62,7 @@ Strategy and benchmark equity curves are computed, along with Sharpe ratio, max 
 
 ### Portfolio Growth & Feature Importances
 
-`trading_system.py` produces a two-panel chart:
+`trading_model.py` produces a two-panel chart:
 
 - **Left**: Strategy equity curve (green) vs buy-and-hold benchmark (grey dashed), both starting from `$10,000`
 - **Right**: Random Forest feature importances — which indicators drove predictions most

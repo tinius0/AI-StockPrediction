@@ -84,13 +84,13 @@ python predictor.py
 
 Run the full trading system:
 ```bash
-python trading_system.py
+python trading_model.py
 ```
 
 Change the ticker or starting capital by editing the `__main__` block in either file, or by importing directly:
 
 ```python
-from trading_system import run_trading_system, visualize_performance
+from trading_model import run_trading_system, visualize_performance
 
 results = run_trading_system("TSLA", initial_capital=25_000)
 visualize_performance(*results, "TSLA")
